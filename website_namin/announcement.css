@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #Dfd9d9;
+}
+a:hover{
+    background: #343434;;   
+      color: #0466F9;
+      border-left: 5px solid #0466F9;
+ }
+a:is(:link,:active,:visited).active{
+        background: #343434;;
+        color: #0455f9;
+        border-left: 5px solid #0466F9;
+ }  
+ .dummyspace{
+margin-top: 50vh;
+ }    
+.sidebar{
+position: fixed;
+top: 0;
+left: 0;
+height: 100%;
+width: 260px;
+background: #1b1919;
+z-index: 100;
+transition: all 0.5s ease;
+}
+.sidebar.close{
+width: 78px;
+}
+.sidebar .logo-details{
+height: 60px;
+width: 100%;
+display: flex;
+align-items: center;
+}
+.sidebar .logo-details i{
+font-size: 1.5rem;
+color: #fff;
+height: 50px;
+min-width: 78px;
+text-align: center;
+line-height: 50px;
+cursor: pointer;
+}
+.sidebar .logo-details .logo_name{
+font-size: 1.5rem;
+color: #fff;
+font-weight: 600;
+transition: 0.3s ease;
+transition-delay: 0.1s;
+}
+.sidebar.close .logo-details .logo_name{
+transition-delay: 0s;
+opacity: 0;
+pointer-events: none;
+}
+.sidebar .nav-links{
+height: 100%;
+padding: 30px 0 150px 0;
+overflow: auto;
+}
+.nav-links{
+  margin-top: -20px;
+}
+.sidebar.close .nav-links{
+overflow: visible;
+}
+.sidebar .nav-links::-webkit-scrollbar{
+display: none;
+}
+.sidebar .nav-links li{
+position: relative;
+list-style: none;
+transition: all 0.4s ease;
+}
+.sidebar .nav-links li:hover{
+background: #1d1b31;
+}
+.sidebar .nav-links li .iocn-link{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.sidebar.close .nav-links li .iocn-link{
+display: block
+}
+.sidebar .nav-links li i{
+height: 60px;
+min-width: 78px;
+text-align: center;
+line-height: 60px;
+color: #fff;
+font-size: 1.4rem;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+.sidebar .nav-links li.showMenu i.arrow{
+transform: rotate(-180deg);
+}
+.sidebar.close .nav-links i.arrow{
+display: none;
+}
+.sidebar .nav-links li a{
+display: flex;
+align-items: center;
+text-decoration: none;
+}
+.sidebar .nav-links li a .link_name{
+font-size: 18px;
+font-weight: 400;
+color: #fff;
+transition: all 0.4s ease;
+}
+.sidebar.close .nav-links li a .link_name{
+opacity: 0;
+pointer-events: none;
+}
+.body-of-announcement {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.wrapper{
+  padding: 20px;
+}
+.announcement{
+  padding: 20px;
+  width: 30vw;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.text{
+  font-size: 3rem;
+}
