@@ -1,6 +1,6 @@
 # Enrollment_system
 <br />
-Hi, I work to this research project because I love Jasmine so much, for context she's the research leader of this project.
+Hi, I work to this research project because I love Jasmine Catherine so much, for context she's the research leader of this project.
 <br />
 
 # Functions needed to do
